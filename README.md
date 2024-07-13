@@ -35,3 +35,23 @@ LiterAlura es una aplicación de consola desarrollada en Java utilizando Spring 
 
 2. **Configurar la base de datos PostgreSQL:**
 
+- Crear una base de datos llamada literalura.
+- Configurar las credenciales de acceso a la base de datos en el archivo application.properties
+
+   ```
+   spring.datasource.url=jdbc:postgresql://localhost:5432/literalura
+   spring.datasource.username=tu_usuario
+   spring.datasource.password=tu_contraseña
+   spring.jpa.hibernate.ddl-auto=update
+   spring.jpa.show-sql=true
+   spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+ 3. **Construir y ejecutar el proyecto:**
+
+   ```
+   mvn clean install
+   mvn spring-boot:run
+
+	```
+
+
